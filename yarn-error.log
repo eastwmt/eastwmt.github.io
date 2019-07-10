@@ -1,0 +1,57 @@
+Arguments: 
+  /usr/local/Cellar/node/12.4.0/bin/node /usr/local/Cellar/yarn/1.17.0/libexec/bin/yarn.js add ruby-dev
+
+PATH: 
+  /anaconda3/bin:/anaconda3/condabin:/Users/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/allen/Documents/soft/apache-maven-3.6.0/bin:/usr/local/mysql/bin
+
+Yarn version: 
+  1.17.0
+
+Node version: 
+  12.4.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/ruby-dev: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.17.0/libexec/lib/cli.js:66823:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.17.0/libexec/lib/cli.js:140439:22)
+      at Request.emit (events.js:200:13)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.17.0/libexec/lib/cli.js:141411:10)
+      at Request.emit (events.js:200:13)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.17.0/libexec/lib/cli.js:141333:12)
+      at Object.onceWrapper (events.js:288:20)
+      at IncomingMessage.emit (events.js:205:15)
+      at endReadableNT (_stream_readable.js:1154:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:9)
+
+npm manifest: 
+  {
+      "name": "hux-blog",
+      "title": "Hux Blog",
+      "version": "1.0.0",
+      "homepage": "http://huxpro.github.io",
+      "author": "Hux",
+      "devDependencies": {
+          "grunt": "~0.4.5",
+          "grunt-contrib-less": "~0.11.4",
+          "grunt-contrib-watch": "~0.6.1",
+          "grunt-banner": "~0.2.3",
+          "grunt-contrib-uglify": "~0.5.1"
+      },
+      "repository": {
+          "type": "git",
+          "url": "https://github.com/Huxpro/huxpro.github.io"
+      },
+      "scripts": {
+          "preview": "cd _site; python -m SimpleHTTPServer 8020",
+          "watch": "grunt watch & npm run preview & jekyll serve -w;"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
